@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <title>Edit Profile</title>
+        <!--link rel="stylesheet" href="edit_profile.css"-->
+
+        <style>
+            #main-panel {
+                width: 40%;
+                height: 70%;
+                position: relative;
+                left: 30%;
+                margin-top: 3%;
+                align-items: center;
+                background-color: white;
+                border-radius: 7px;
+                box-shadow: 0px 0px 5px 2px black;	
+                padding: 2px 15px 12px 0;
+            }
+
+            label,
+            input {
+                display: inline-block;
+            }
+
+            label {
+                width: 30%;
+                text-align: left;
+                position: relative;
+                left:22%;
+            }
+
+            label+input {
+                width: 35%;
+                margin: 0 25% 0 4%;
+            }
+
+            textarea {
+                width:35%;
+                display: inline-block;
+                margin: 0 25% 0 4%;
+            }
+
+            .login-form-field {
+                border: none;
+                border-bottom: 1px solid #3a3a3a;
+                margin-bottom: 9px;
+                border-radius: 3px;
+                outline: none;
+                padding: 5px 20px 5px 5px;
+                position: relative;
+                left: 15%;
+            }
+
+            #login-form-submit {
+                width: 20%;
+                padding: 7px;
+                border-radius: 5px;
+                cursor: pointer;
+                position: relative;
+                left: 44%;
+            }
+
+            h3 {
+                font-size: 18px;
+                font-weight: 400;
+                line-height: 25px;
+            }
+        </style>
+        <!--script defer src="edit_profile.js"></script-->
+
+    </head>
+    <body>
+
+        <div id="main-panel">
+            <center>
+                <h2>Profile </h2>
+                <h3>Edit your information</h3>
+            </center>
+
+            <form id="login-form" action="login.html" method="POST">      <!--  Change action as real file name  -->
+
+                <label for="username-field">Username</label>
+                <input type="text" name="uname" id="username-field" value="Apurva" required="" maxlength="20" class="login-form-field"><br><br>
+                
+                <label for="password-field">Password</label>
+                <input type="password" name="pass" id="password-field" value="password" required="" maxlength="15" class="login-form-field" ><br><br>
+                
+                <label for="phone-field"> Phone Number</label>
+                <input type="text" name="phone-no" id="phone-field" value="9811224455" required="" maxlength="10" class="login-form-field"><br><br>
+                
+                <label for="address-field"> Address</label>
+                <textarea name="address" id="address-field" cols="30" rows="3" class="login-form-field" placeholder="Enter your address"></textarea><br><br>
+                
+                <input style="background-color: rgb(255, 174, 0);" type="submit" name="submit" value="Save" id="login-form-submit">
+                
+            </form>
+        </div>
+
+    </body>
+</html>
