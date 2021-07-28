@@ -7,17 +7,22 @@
     <title>Stores</title>
 
     <style>
+        tr a{
+            text-decoration: none;
+            color: white;
+        }
         table {
           padding: auto;
           margin-right: 20%;
           font-family: arial, sans-serif;
-         
+          /* background-color: white; */
+          border-collapse: collapse;
           width: 100%;
           border: 2px solid #dddddd;
-          
+          color: white;
           /* border-radius: 25px;  */
         }
-        
+
         td, th {
             
           /* border-radius: 25px; */
@@ -26,59 +31,79 @@
           padding: 8px;
         }
         
-        tr:nth-child(even) {
+        /* tr:nth-child(even) {
           background-color: #FEF7DC;
         }
 
         tr:nth-child(odd) {
           background-color: rgb(255, 174, 0);
-        }
+        } */
         h2{
             font-family:Verdana, Geneva, Tahoma, sans-serif;
             text-align: center;
         }
+        html, body, .site-content {
+            height: 100%;
+            overflow: hidden;
+        }
+
+        .site-content tr:hover, tr a:hover{
+            background-color: #ddd;
+            transition: .2s;
+            color: black;
+        }
+
         </style>
 </head>
 <body>
+    <div class="site-content" id="content">
     <h2 style="color: white;">Available Stores</h2>
 
     <table>
-        <tr>
+        <tr style="background-color:rgb(255, 174, 0)">
             <th>Shop name</th>
             <th>Type</th>
             <th>Contact</th>
         </tr>
         <tr>
-            <td>Raj electricals</td>
+            <td><a href="#" onclick="load_time_slot()">Raj electricals </a></td>
             <td>electricals</td>
             <td>2658422265</td>
         </tr>
         <tr>
-            <td>Ayyangar Bakers</td>
+            <td><a href="#" onclick="load_time_slot()">Ayyangar Bakers</a></td>
             <td>Food</td>
             <td>2654896542</td>
         </tr>
         <tr>
-            <td>Radha Medicals</td>
+            <td><a href="#" onclick="load_time_slot()">Radha Medicals</a></td>
             <td>Medical Store</td>
             <td>5978642598</td>
         </tr>
         <tr>
-            <td>Patel's grocery</td>
+            <td><a href="#" onclick="load_time_slot()">Patel's grocery</a></td>
             <td>Grocery store</td>
             <td>6987546323</td>
         </tr>
         <tr>
-            <td>Mealscale superstore</td>
+            <td><a href="#" onclick="load_time_slot()">Mealscale superstore</a></td>
             <td>Grocery store</td>
             <td>4569872589</td>
         </tr>
         <tr>
-            <td>Amaze one stop shop</td>
+            <td><a href="#" onclick="load_time_slot()">Amaze one stop shop</a></td>
             <td>Stationary store</td>
             <td>598546825</td>
         </tr>
     </table>
-
+</div>
+    <object id="frame1" data=""></object>
+    <script>
+        function load_time_slot(){
+            document.getElementById("content").style.display="block";
+            document.getElementById("frame1").style.display="none";
+            document.getElementById("content").innerHTML='<object width="100%" height="100%" type="text/html" data="TimeSlot.html" ></object>';
+        }
+    </script>
 </body>
 </html>

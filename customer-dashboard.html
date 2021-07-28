@@ -45,117 +45,137 @@
                     <a href="#">Nashik</a>
                 </div>
             </div>
-            
-            <li><a href="#" onclick="load_edit_profile()"><i class="fas fa-user-edit"></i> Edit Profile</a></li>
-            <li><a href="#"><i class="fas fa-sign-out-alt"></i> Logout</a></li>
+            <div class="dropdown">
+              <li><a href="#"><i class="fas fa-user"></i>  User_Name
+                <i class="fas fa-chevron-circle-down"></i></a></li>
+              <div class="dropdown-content">
+                <a href="#" onclick="load_edit_profile()"><i class="fas fa-user-edit"></i> Edit Profile</a>
+                <a href="#"><i class="fas fa-sign-out-alt"></i> Logout</a>
+              </div>
+          </div>
+            <!-- <li><a href="#" onclick="load_edit_profile()"><i class="fas fa-user-edit"></i> Edit Profile</a></li>
+            <li><a href="#"><i class="fas fa-sign-out-alt"></i> Logout</a></li> -->
         </ul>
     </nav>
 <div class="site-content" id="content">
     <h2>Current Bookings</h2><br>
 <table id="current">
 <!-- <caption>Current Bookings</caption> -->
-  <tr>
-    <th>Sr No.</th>
-    <th>Shop</th>
-    <th>Place</th>
-    <th>Date</th>
-    <th>Time</th>
-    <th>Appointment Status</th>
-  </tr>
-  <tr>
-    <td>1</td>
-    <td>ABC</td>
-    <td>Nashik</td>
-    <td>01/01/2021</td>
-    <td>01:30</td>
-    <td>Booked</td>
-  </tr>
-  <tr>
-    <td>2</td>
-    <td>DEF</td>
-    <td>Pune</td>
-    <td>01/01/2021</td>
-    <td>01:50</td>
-    <td>Cancelled</td>
-  </tr>
-  <tr>
-    <td>3</td>
-    <td>LMN</td>
-    <td>Aurangabad</td>
-    <td>01/01/2021</td>
-    <td>04:30</td>
-    <td>Completed</td>
-  </tr>
-  <tr>
-    <td>4</td>
-    <td>PQR</td>
-    <td>Mumbai</td>
-    <td>01/01/2021</td>
-    <td>02:15</td>
-    <td>Booked</td>
-  </tr>
-  <tr>
-    <td>5</td>
-    <td>XYZ</td>
-    <td>Nashik</td>
-    <td>01/01/2021</td>
-    <td>05:00</td>
-    <td>Booked</td>
-  </tr>
+<tr>
+  <th>Sr No.</th>
+  <th>Shop</th>
+  <th>Place</th>
+  <th>Date</th>
+  <th>Time</th>
+  <th>Appointment Status</th>
+  <th>Change Slot </th>
+  <th>Cancel</th>
+</tr>
+<tr>
+  <td>1</td>
+  <td>ABC</td>
+  <td>Nashik</td>
+  <td>01/01/2021</td>
+  <td>01:30</td>
+  <td>Booked</td>
+  <td><button class="btn">Change Time</button></td>
+  <td><button class="btn" class="button button1">Cancel</button></td>
+
+</tr>
+<tr>
+  <td>2</td>
+  <td>DEF</td>
+  <td>Pune</td>
+  <td>01/01/2021</td>
+  <td>01:50</td>
+  <td>Completed</td>
+  <td><button class="button disabled" >Change Time</button></td>
+  <td><button class="button disabled">Cancel</button></td>
+</tr>
+<tr>
+  <td>3</td>
+  <td>LMN</td>
+  <td>Aurangabad</td>
+  <td>01/01/2021</td>
+  <td>04:30</td>
+  <td>Completed</td>
+  <td><button class="button disabled" >Change Time</button></td>
+  <td><button class="button disabled">Cancel</button></td>
+</tr>
+<tr>
+  <td>4</td>
+  <td>PQR</td>
+  <td>Mumbai</td>
+  <td>01/01/2021</td>
+  <td>02:15</td>
+  <td>Booked</td>
+  <td><button class="btn">Change Time</button></td>
+  <td><button class="btn" class="button button1">Cancel</button></td>
+</tr>
+<tr>
+  <td>5</td>
+  <td>XYZ</td>
+  <td>Nashik</td>
+  <td>01/01/2021</td>
+  <td>05:00</td>
+  <td>Booked</td>
+  <td><button class="btn">Change Time</button></td>
+  <td><button class="btn" class="button button1">Cancel</button></td>
+</tr>
    
 </table>
 <br><br>
 <h2>Previous Bookings</h2><br>
 <table id="previous">
 <!-- <caption>Previous Bookings</caption> -->
-  <tr>
-    <th>Sr No.</th>
-    <th>Shop</th>
-    <th>Place</th>
-    <th>Date</th>
-    <th>Time</th>
-    <th>Appointment Status</th>
-  </tr>
-  <tr>
-    <td>1</td>
-    <td>ABC</td>
-    <td>Nashik</td>
-    <td>01/01/2021</td>
-    <td>01:30</td>
-    <td>Booked</td>
-  </tr>
-  <tr>
-    <td>2</td>
-    <td>DEF</td>
-    <td>Pune</td>
-    <td>01/01/2021</td>
-    <td>01:50</td>
-    <td>Cancelled</td>
-  </tr>
-  <tr>
-    <td>3</td>
-    <td>LMN</td>
-    <td>Aurangabad</td>
-    <td>01/01/2021</td>
-    <td>04:30</td>
-    <td>Completed</td>
-  </tr>
-  <tr>
-    <td>4</td>
-    <td>PQR</td>
-    <td>Mumbai</td>
-    <td>01/01/2021</td>
-    <td>02:15</td>
-    <td>Booked</td>
-  </tr>
-  <tr>
-    <td>5</td>
-    <td>XYZ</td>
-    <td>Nashik</td>
-    <td>01/01/2021</td>
-    <td>05:00</td>
-    <td>Booked</td>
-  </tr>
+<tr>
+  <th>Sr No.</th>
+  <th>Shop</th>
+  <th>Place</th>
+  <th>Date</th>
+  <th>Time</th>
+  <th>Appointment Status</th>
+</tr>
+<tr>
+  <td>1</td>
+  <td>ABC</td>
+  <td>Nashik</td>
+  <td>01/01/2021</td>
+  <td>01:30</td>
+  <td>Completed</td>
+</tr>
+<tr>
+  <td>2</td>
+  <td>DEF</td>
+  <td>Pune</td>
+  <td>01/01/2021</td>
+  <td>01:50</td>
+  <td>Completed</td>
+</tr>
+<tr>
+  <td>3</td>
+  <td>LMN</td>
+  <td>Aurangabad</td>
+  <td>01/01/2021</td>
+  <td>04:30</td>
+  <td>Completed</td>
+</tr>
+<tr>
+  <td>4</td>
+  <td>PQR</td>
+  <td>Mumbai</td>
+  <td>01/01/2021</td>
+  <td>02:15</td>
+  <td>Completed</td>
+</tr>
+<tr>
+  <td>5</td>
+  <td>XYZ</td>
+  <td>Nashik</td>
+  <td>01/01/2021</td>
+  <td>05:00</td>
+  <td>Completed</td>
+</tr>
    
 </table>
 <br><br>

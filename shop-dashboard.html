@@ -28,10 +28,16 @@
                     </tr>
                 </table>
             </div>
-            <li><a href="#" onclick=""><i class="fas fa-user-edit"></i> Edit Profile</a></li>
-            <li><a href="#" onclick=""><i class="fas fa-user-edit"></i> Edit Shop Details</a></li>
-            <li><a href="#" onclick=""><i class="fas fa-user-edit"></i> Manage Time Slots</a></li>
-            <li><a href="#"><i class="fas fa-sign-out-alt"></i> Logout</a></li>
+            <li><a href="#" onclick=""><i class="fas fa-edit"></i> Edit Shop Details</a></li>
+            <li><a href="#" onclick=""><i class="far fa-calendar-alt"></i> Manage Time Slots</a></li>
+            <div class="dropdown">
+                <li><a href="#"><i class="fas fa-user"></i>  User_Name
+                  <i class="fas fa-chevron-circle-down"></i></a></li>
+                <div class="dropdown-content">
+                  <a href="#" onclick="load_edit_profile()"><i class="fas fa-user-edit"></i> Edit Profile</a>
+                  <a href="#"><i class="fas fa-sign-out-alt"></i> Logout</a>
+                </div>
+            </div>
         </ul>
     </nav>
 <div class="site-content" id="content">

@@ -4,39 +4,52 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Time Slot</title>
+
+    <style>
+    
+      #main-panel {
+        width: 40%;
+        height: 70%;
+        position: relative;
+        left: 30%;
+        margin-top: 5%;
+        align-items: center;
+        background-color: white;
+        border-radius: 7px;
+        box-shadow: 0px 0px 5px 2px black;	
+        padding: 2px 15px 12px 0;
+      }
+
+      .name{
+        margin-left: 20px;
+      }
+
+      </style>
 </head>
 
 <body>
-    <form>
-        <div>
+    
+        <div id="main-panel"> 
             
-                <link rel="stylesheet" type="text/css" href="asd.css" />
-            <h1>
-                 ABC(opening hours 9:00 am to 4:00pm) 
-            </h1>
+                <!link rel="stylesheet" type="text/css" href="asd.css" />
+            <h2 class="name">
+                 Raj Electricals<br> 
+                 <h3 class="name">Opening hours: 9:00 am to 4:00pm</h3>
+            </h2>
           
-          <!input id="appt-time" type="time" name="appt-time"
-                 min="12:00" max="18:00" required>
-          <!span class="validity"></span>
-        </div>
-        <div>
-            
-            <p>Please select your Time Slot:</p>
-
-            
-            <!div style="text-align: left; width: 100%;">
-                <!div style="margin: 0 auto; width:100px; text-align:left;">
-                   
+         
 
                 
            
 <div class="row">
     <div class="col-25">
-      <label for="Available Slots">Available Slots</label>
+      
+    <center><h2>Available Slots</h2><br><h3>Select Time Slot:</h3></center>
     </div>
+    <center>
     <div class="col-75">
-      <select id="Available Slots" name="Available Slots">
+      <select style="text-align: center;" id="Available Slots" name="Available Slots">
         <option value="09:00 to 10:00">09:00 to 10:00</option>
         <option value="10:00 to 11:00">10:00 to 11:00</option>
         <option value="11:00 to 12:00">11:00 to 12:00</option>
@@ -45,34 +58,23 @@
         <option value="02:00 to 03:00">02:00 to 03:00</option>
         <option value="03:00 to 04:00">03:00 to 04:00</option>
         
+        
+
       </select>
     </div>
+  </center>
   </div>
 
 
-            
-            
-            <p align="center">
-                <button type="button" style="background-color:rgb(172, 97, 97);margin-left:auto;margin-right:auto;display:block;margin-top:22%;margin-bottom:0%"> Book Slot </button>
+            <div>
+              <p align="center">
+                <button type="button" style="background-color:rgb(255, 174, 0);margin-left:auto;margin-right:auto;display:block;margin-top:22%;margin-bottom:0%"> Book Slot </button>
                   </p></button>
                 </p>
-
+           
+              </div>
             
-            <!input type="button" Id="1" value="9:00 to 10:00">
-            <!input type="button" value="10:00 to 11:00">
-            <!input type="button" value="11:00 to 12:00">
-            <!input type="button" value="12:00 to 01:00">
-            <!input type="button" value="01:00 to 02:00">
-            <!input type="button" value="02:00 to 03:00">
-            <!input type="button" value="03:00 to 04:00">
-            <!input type="button" value="04:00 to 05:00">
-            <!input type="button" value="05:00 to 06:00">
-            <!input type="button" value="06:00 to 07:00">
-
-
-            <br><!input type="submit" value="Book Slot"></br>
         </div>
-      </form>
+      
 </body>
-<script src="abc.js"></script>
 </html>
