@@ -97,7 +97,7 @@ function load_time_slot(shop) {
     }
             
 }
-
+//fot sorting
 var menu = document.querySelector(".dropdown-content");
 menu.addEventListener("click", function(e){
         var id = e.target.getAttribute("id")
