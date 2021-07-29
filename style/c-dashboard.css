@@ -209,3 +209,16 @@ a.active,a:hover{
     font-size: 15px;
     padding: 3px;
   }
+  #main-panel {
+    width: 40%;
+    height: 40%;
+    position: relative;
+    left: 30%;
+    margin-top: 5%;
+    align-items: center;
+    background-color: white;
+    color: black;
+    border-radius: 7px;
+    box-shadow: 0px 0px 5px 2px black;	
+    padding: 2px 15px 12px 0;
+  }

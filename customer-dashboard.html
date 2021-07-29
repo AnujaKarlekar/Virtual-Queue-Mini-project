@@ -9,7 +9,7 @@
     <link rel="stylesheet" type="text/css" href="style/c-dashboard.css">
 
 </head>
-<body>
+<body id = "customer-dashboard">
     <!-- <div class="pic"> -->
     <nav>
         <label class="site-name">Virtual Queue</label>
@@ -19,10 +19,10 @@
                 <table class="search-element">
                     <tr>
                         <td>
-                            <input type="text" class="search-text" placeholder="Search Name or Pincode">
+                            <input type="text" class="search-text" placeholder="Search Name or Pincode" id = "search-pin">
                         </td>
                         <td>
-                            <a href="#" class="search-btn"><i class="fa fa-search"></i></a>
+                            <a href="#" class="search-btn" onclick= "load_search_shop()"><i class="fa fa-search"></i></a>
                         </td>
                     </tr>
                 </table>
@@ -32,19 +32,19 @@
             <div class="dropdown">
                 <li><a href="#">Shop Categories <i class="fas fa-chevron-circle-down"></i></a></li>
                 <div class="dropdown-content">
-                    <a href="#" onclick="load_medical()">Medical Store</a>
-                    <a href="#">Grocery Shop</a>
-                    <a href="#">General Store</a>
+                    <a href="#" id = "medical-store">Medical Store</a>
+                    <a href="#" id = "grocery-store">Grocery Shop</a>
+                    <a href="#" id = "general-store">General Store</a>
                 </div>
             </div>
-            <div class="dropdown">
+            <!-- <div class="dropdown">
                 <li><a href="#">Shop Location <i class="fas fa-chevron-circle-down"></i></a></li>
                 <div class="dropdown-content">
                     <a href="#">Pune</a>
                     <a href="#">Mumbai</a>
                     <a href="#">Nashik</a>
                 </div>
-            </div>
+            </div> -->
             <div class="dropdown">
               <li><a href="#"><i class="fas fa-user"></i>  User_Name
                 <i class="fas fa-chevron-circle-down"></i></a></li>
