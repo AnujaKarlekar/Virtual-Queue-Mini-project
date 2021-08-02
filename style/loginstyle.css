@@ -54,7 +54,7 @@ html,body{
 .slide-controls .slide{
   height: 100%;
   width: 100%;
-  color: #fff;
+  color: #FFAE00;
   font-size: 18px;
   font-weight: 500;
   text-align: center;
@@ -79,21 +79,21 @@ html,body{
 input[type="radio"]{
   display: none;
 }
-#alogin:checked ~ .slider-tab{
+#sualogin:checked ~ .slider-tab{
   left: 50%;
 }
-#alogin:checked ~ label.alogin{
+#sualogin:checked ~ label.alogin{
   color: #fff;
   cursor: default;
   user-select: none;
 }
-#alogin:checked ~ label.login{
+#sualogin:checked ~ label.login{
   color: #000;
 }
-#login:checked ~ label.alogin{
+#sulogin:checked ~ label.alogin{
   color: #000;
 }
-#login:checked ~ label.login{
+#sulogin:checked ~ label.login{
   cursor: default;
   user-select: none;
 }
