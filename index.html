@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+   <head>
+      <meta charset="utf-8">
+      <title>Login </title>
+      <link rel="stylesheet" href="style/loginstyle.css">
+      
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   </head>
+   <body>
+      <div class="wrapper">
+         
+         <div class="form-container">
+            <div class="slide-controls">
+               <input type="radio" name="slide" id="login" checked>
+               <label for="login" class="slide login" id="user-login">Virtual Queue</label>
+            </div>
+            <div class="form-inner">
+               <form id="form_id" method="post" name="myform" class="login">
+                  <div class="field">
+                     <input type="text" placeholder="Username" name="username" id="username" required>
+                  </div>
+                  <div class="field">
+                     <input type="password" placeholder="Password" name="password" id="password" required>
+                  </div>                  
+                  <div class="field btn">
+                     <div class="btn-layer"></div>
+                     <input type="submit" value="Login" id="submit" onclick="validate()">                     
+                  </div>
+                  <div class="signup-link">
+                    Not a member? <a href="signup.html">Signup now</a>
+                 </div>
+                  
+             </form>
+               <form action="#" class="alogin">
+                  <div class="field">
+                     <input type="text" placeholder="Username" name="admin-username" id="admin-username" required>
+                  </div>
+                  <div class="field">
+                     <input type="password" placeholder="Password" name="admin-password" id="admin-password" required>
+                  </div>                  
+                  <div class="field btn">
+                    <div class="btn-layer"></div>
+                    <input type="submit" value="Login">
+                 </div>
+                 
+                  </div>
+               </form>
+            </div>
+         </div>
+      </div>
+      <script src="script/login.js"></script>
+      
+   </body>
+</html>
