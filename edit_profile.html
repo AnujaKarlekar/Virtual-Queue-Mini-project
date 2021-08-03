@@ -14,7 +14,7 @@
                 height: 70%;
                 position: relative;
                 left: 30%;
-                margin-top: 3%;
+                margin-top: 1%;
                 align-items: center;
                 background-color: white;
                 border-radius: 7px;
@@ -63,37 +63,48 @@
                 cursor: pointer;
                 position: relative;
                 left: 44%;
+                background: #FFAE00;
             }
 
             h3 {
-                font-size: 18px;
+                font-size: 20px;
                 font-weight: 400;
                 line-height: 25px;
             }
+            h2 {
+                font-size: 25px;
+                line-height: 20px;
+            }
+            
+
         </style>
         <!--script defer src="edit_profile.js"></script-->
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.12.1/css/all.css" crossorigin="anonymous">
 
     </head>
-    <body>
+    <body >
 
         <div id="main-panel">
             <center>
-                <h2>Profile </h2>
+                <h2>  
+                    <i class="fas fa-user-edit"></i> 
+                    User Profile 
+                </h2>
                 <h3>Edit your information</h3>
             </center>
 
             <form id="login-form" action="login.html" method="POST">      <!--  Change action as real file name  -->
 
-                <label for="username-field">Username</label>
-                <input type="text" name="uname" id="username-field" value="Apurva" required="" maxlength="20" class="login-form-field"><br><br>
+                <label for="username-field"><i class="fas fa-user-alt"></i>     Username</label>
+                <input type="text" name="uname" id="username-field" value="ABC" required="" maxlength="20" class="login-form-field"><br><br>
                 
-                <label for="password-field">Password</label>
+                <label for="password-field"><i class="fas fa-key"></i>  Password</label>
                 <input type="password" name="pass" id="password-field" value="password" required="" maxlength="15" class="login-form-field" ><br><br>
                 
-                <label for="phone-field"> Phone Number</label>
+                <label for="phone-field"><i class="fas fa-phone-alt"></i>   Phone Number</label>
                 <input type="text" name="phone-no" id="phone-field" value="9811224455" required="" maxlength="10" class="login-form-field"><br><br>
                 
-                <label for="address-field"> Address</label>
+                <label for="address-field"><i class="fas fa-map-marker-alt"></i> Address</label>
                 <textarea name="address" id="address-field" cols="30" rows="3" class="login-form-field" placeholder="Enter your address"></textarea><br><br>
                 
                 <input style="background-color: rgb(255, 174, 0);" type="submit" name="submit" value="Save" id="login-form-submit"

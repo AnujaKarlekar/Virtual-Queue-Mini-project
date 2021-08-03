@@ -34,5 +34,4 @@ function validate(){
                 console.log("Page not found")
         }
     }
-
 }

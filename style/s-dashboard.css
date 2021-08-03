@@ -121,9 +121,13 @@ a.active,a:hover{
     border-radius: 5px;
   }
 
+<<<<<<< HEAD
+  html, body, .site-content {
+=======
   /* html, body, .site-content {
+>>>>>>> 55395ac252aaee084bf7f562fee6285390eaca70
     height: 100%;
-} */
+}
 
   .site-content{
     margin: 50px;
