@@ -96,10 +96,77 @@
                 <label for="address-field"> Address</label>
                 <textarea name="address" id="address-field" cols="30" rows="3" class="login-form-field" placeholder="Enter your address"></textarea><br><br>
                 
-                <input style="background-color: rgb(255, 174, 0);" type="submit" name="submit" value="Save" id="login-form-submit">
+                <input style="background-color: rgb(255, 174, 0);" type="submit" name="submit" value="Save" id="login-form-submit"
+                onclick="submit_form()">
                 
             </form>
         </div>
+        <script>
+            function read_cookie(cname) {
+                var cookies = document.cookie.split(';')
+                for(var i in cookies) {
+                    var value = cookies[i].split('=')
+                    if(value[1])
+                        if(cname == value[0])
+                             return value[1]
+                }
+                return null
+            }
 
+            let cookie = document.cookie
+            var cookies = cookie.split(';')
+            var username = read_cookie('UserName')//cookies[1].split('=')[1]
+            document.getElementById("username-field").value = username
+    
+            var url = "https://localhost:44300/userinfo/"+ username
+            let request = new XMLHttpRequest()
+            request.open("GET", url);
+            request.send();
+            request.onload = () => {
+                if(request.status === 200){
+                    var rows = JSON.parse(request.response)
+                    document.getElementById("password-field").value = rows['passwd']
+                    document.getElementById("phone-field").value = rows['contact']
+                    document.getElementById("address-field").value = rows['adress']
+                }
+                else{
+                    console.log("Page Not Found")
+                     
+                }
+            }
+            function submit_form() {
+                var url = "https://localhost:44300/userinfo/"+ username
+                let request = new XMLHttpRequest()
+                request.open("GET", url);
+                request.send();
+                request.onload = () => {
+                if(request.status === 200){
+                    var rows = JSON.parse(request.response)
+                    rows['passwd'] = document.getElementById("password-field").value
+                    rows['contact'] = document.getElementById("phone-field").value
+                    rows['adress'] = document.getElementById("address-field").value
+                    console.log(rows)
+                    url = "https://localhost:44300/updateinfo/"
+                    request = new XMLHttpRequest(
+                    )
+                    request.open("PUT", url);
+                    request.setRequestHeader("Content-type", "application/json")
+                    request.send(JSON.stringify(rows));
+                    request.onload = () => {
+                    if(request.status === 200){
+                        alert("changes saved successfully")
+                    }
+                    else{
+                        alert("Changes not saved")
+                    }
+                    }
+                }
+                }
+                
+            }
+                  
+                
+    
+        </script>
     </body>
 </html>

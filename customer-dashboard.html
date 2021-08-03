@@ -46,11 +46,11 @@
                 </div>
             </div> -->
             <div class="dropdown">
-              <li><a href="#"><i class="fas fa-user"></i>  User_Name
-                <i class="fas fa-chevron-circle-down"></i></a></li>
+              <li><a href="#"><i class="fas fa-user"></i>  <span id = "username">UserName</span>
+                                <i class="fas fa-chevron-circle-down"></i></a></li>
               <div class="dropdown-content">
                 <a href="#" onclick="load_edit_profile()"><i class="fas fa-user-edit"></i> Edit Profile</a>
-                <a href="#"><i class="fas fa-sign-out-alt"></i> Logout</a>
+                <a href="#" onclick="logout()"><i class="fas fa-sign-out-alt" ></i> Logout</a>
               </div>
           </div>
             <!-- <li><a href="#" onclick="load_edit_profile()"><i class="fas fa-user-edit"></i> Edit Profile</a></li>
@@ -58,9 +58,9 @@
         </ul>
     </nav>
 <div class="site-content" id="content">
-    <h2>Current Bookings</h2><br>
+    <!-- <h2>Current Bookings</h2><br>
 <table id="current">
-<!-- <caption>Current Bookings</caption> -->
+<caption>Current Bookings</caption>
 <tr>
   <th>Sr No.</th>
   <th>Shop</th>
@@ -127,7 +127,7 @@
 <br><br>
 <h2>Previous Bookings</h2><br>
 <table id="previous">
-<!-- <caption>Previous Bookings</caption> -->
+<caption>Previous Bookings</caption>
 <tr>
   <th>Sr No.</th>
   <th>Shop</th>
@@ -177,7 +177,7 @@
   <td>Completed</td>
 </tr>
    
-</table>
+</table> -->
 <br><br>
 </div>  
 <object id="frame1" data=""></object>
